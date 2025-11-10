@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* Универсальные стили для контейнеров */
+.sonner-lite-container {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+  padding: 12px;
+}
+
+/* Позиционирование */
+.sonner-lite-top-left {
+  top: 0;
+  left: 0;
+  align-items: flex-start;
+}
+
+.sonner-lite-top-center {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+.sonner-lite-top-right {
+  top: 0;
+  right: 0;
+  align-items: flex-end;
+}
+
+.sonner-lite-bottom-left {
+  bottom: 0;
+  left: 0;
+  align-items: flex-start;
+}
+
+.sonner-lite-bottom-center {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+.sonner-lite-bottom-right {
+  bottom: 0;
+  right: 0;
+  align-items: flex-end;
+}
+
+/* Стили для отдельного уведомления */
+.notify {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: white;
+  cursor: default;
+  pointer-events: auto;
+  max-width: 350px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.notify.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.notify span {
+  flex: 1;
+  word-break: break-word;
+}
+.notify button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.notify.success {
+  background: #4caf50;
+}
+.notify.error {
+  background: #f44336;
+}
+.notify.warning {
+  background: #ff9800;
+  color: black;
+}
+.notify.default {
+  background: rgb(0, 0, 0);
+}
+
+/*# sourceMappingURL=notifier.css.map */

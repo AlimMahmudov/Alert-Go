@@ -1,0 +1,39 @@
+{
+  "name": "alert-go",
+  "version": "1.0.10",
+  "description": "Лёгкая и простая библиотека уведомлений для веба, аналог Sonner",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "style": "dist/notifier.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc && sass src/notifier.scss dist/notifier.css",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "notification",
+    "toast",
+    "ui",
+    "sonner",
+    "lite",
+    "alert",
+    "popup"
+  ],
+  "author": "Alim Makhmudov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/sonner-lite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/sonner-lite/issues"
+  },
+  "homepage": "https://github.com/your-username/sonner-lite#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "sass": "^1.93.3"
+  }
+}
